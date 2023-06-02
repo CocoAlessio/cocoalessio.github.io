@@ -1,17 +1,6 @@
 define(['pipAPI','https://raw.githubusercontent.com/CocoAlessio/cocoalessio.github.io/main/DefineVariables'], function(APIConstructor, iatExtension){
 	var API = new APIConstructor();
   
-  //Randomly choose the attribute words from a larger list of attribute words.
-  //Internal studies in Project Implicit found no difference in performance between the words.
-  var GodWords = API.shuffle([
-            'Almighty', 'Creator', 'Deity', 'Divinity', 'Faith', 'Heaven', 'Higher power',
-	    'Holiness', 'Lord', 'Prayer', 'Religion', 'Spirituality', 'Supreme being', 
-	    'Teology', 'Worship', 'Godly', 'Holy', 'Holy Spirit', 'Scripture', 'Savior']);
-  var DevilWords = API.shuffle([
-            'Beelzebub', 'Lucifer', 'Satan', 'Serpent', 'Demon', 'Miscreant', 'Sin', 
-	    'Evil', 'Evil Spirit', 'Temptation', 'Sinner', 'Heretic', 'Possessed', 'Cursed',
-	    'Infernal', 'Horned', 'Demonic', 'Fiend', 'Beast']);
-  
     return iatExtension({
         category1 : {
             name : 'Black people', //Will appear in the data.
