@@ -96,7 +96,7 @@ Created by: Yoav Bar-Anan (baranan@gmail.com). Modified by Costanza Alessio (cxa
 			stimulusCss : {color:'#0000FF','font-size':'2.3em'}
 		},
         base_url : {//Where are your images at? You might want to copy the photos to your own server
-            image : 'https://baranan.github.io/minno-tasks/images/'
+            image : 'https://github.com/baranan/minno-tasks/tree/30c3f45df5b9ffd071fb952cb74f94671bdb2d48/docs/images'
         }
     });
 });
