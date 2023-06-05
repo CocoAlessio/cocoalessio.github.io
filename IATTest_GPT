@@ -1,13 +1,5 @@
 define(['pipAPI','https://raw.githubusercontent.com/CocoAlessio/cocoalessio.github.io/main/DefineVariables'], function(APIConstructor, iatExtension){
-    var API = new APIConstructor();
-    
-      //Randomly choose the attribute words from a larger list of attribute words.
-  //Internal studies in Project Implicit found no difference in performance between the words.
-  var GodWords = API.shuffle([
-            'Omnipotent', 'Omniscient', 'Omnipresence', 'Savior', 'Supreme', 'Almighty', 'Holy spirit']);
-  var DevilWords = API.shuffle([
-            'Beelzebub', 'Lucifer', 'Satan', 'Demon', 'Sin', 'Evil', 'Hell']);
-  
+    var API = new APIConstructor()
 
     return iatExtension({
         category1: {
@@ -43,45 +35,7 @@ define(['pipAPI','https://raw.githubusercontent.com/CocoAlessio/cocoalessio.gith
                 { image: 'ym5.jpg' }
             ],
             stimulusCss: { color:'#31940F', 'font-size':'2.3em' }
-        },
-        attribute1: {
-            name: 'Devil',
-            title: {
-                media: { word: 'Devil' },
-                css: { color:'#0000FF', 'font-size':'1.8em' },
-                height: 4
-            },
-            stimulusMedia: [
-                { word: 'DevilWords[0]' },
-                { word: 'DevilWords[1]' },
-                { word: 'DevilWords[2]' },
-                { word: 'DevilWords[3]' },
-                { word: 'DevilWords[4]' },
-                { word: 'DevilWords[5]' },
-                { word: 'DevilWords[6]' },
-                { word: 'DevilWords[7]' }
-            ],
-            stimulusCss: { color:'#0000FF', 'font-size':'2.3em' }
-        },
-        attribute2: {
-            name: 'God',
-            title: {
-                media: { word: 'God' },
-                css: { color:'#0000FF', 'font-size':'1.8em' },
-                height: 4
-            },
-            stimulusMedia: [
-                { word: 'GodWords[0]' },
-                { word: 'GodWords[1]' },
-                { word: 'GodWords[2]' },
-                { word: 'GodWords[3]' },
-                { word: 'GodWords[4]' },
-                { word: 'GodWords[5]' },
-                { word: 'GodWords[6]' },
-                { word: 'GodWords[7]' }
-            ],
-            stimulusCss: { color:'#0000FF', 'font-size':'2.3em' }
-        },
+ 
         base_url: {
             image: 'https://baranan.github.io/minno-tasks/images/'
         }
