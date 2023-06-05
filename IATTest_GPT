@@ -1,0 +1,81 @@
+define(['pipAPI','https://raw.githubusercontent.com/CocoAlessio/cocoalessio.github.io/main/DefineVariables'], function(APIConstructor, iatExtension){
+    var API = new APIConstructor();
+
+    return iatExtension({
+        category1: {
+            name: 'Black people',
+            title: {
+                media: { word: 'Black people' },
+                css: { color:'#31940F', 'font-size':'1.8em' },
+                height: 4
+            },
+            stimulusMedia: [
+                { image: 'bm1_nc.jpg' },
+                { image: 'bm2_nc.jpg' },
+                { image: 'bm3_nc.jpg' },
+                { image: 'bf1_nc.jpg' },
+                { image: 'bf2_nc.jpg' },
+                { image: 'bf3_nc.jpg' }
+            ],
+            stimulusCss: { color:'#31940F', 'font-size':'2.3em' }
+        },
+        category2: {
+            name: 'White people',
+            title: {
+                media: { word: 'White people' },
+                css: { color:'#31940F', 'font-size':'1.8em' },
+                height: 4
+            },
+            stimulusMedia: [
+                { image: 'yf1.jpg' },
+                { image: 'yf4.jpg' },
+                { image: 'yf5.jpg' },
+                { image: 'ym2.jpg' },
+                { image: 'ym3.jpg' },
+                { image: 'ym5.jpg' }
+            ],
+            stimulusCss: { color:'#31940F', 'font-size':'2.3em' }
+        },
+        attribute1: {
+            name: 'Devil',
+            title: {
+                media: { word: 'Devil' },
+                css: { color:'#0000FF', 'font-size':'1.8em' },
+                height: 4
+            },
+            stimulusMedia: [
+                { word: 'DevilWords[0]' },
+                { word: 'DevilWords[1]' },
+                { word: 'DevilWords[2]' },
+                { word: 'DevilWords[3]' },
+                { word: 'DevilWords[4]' },
+                { word: 'DevilWords[5]' },
+                { word: 'DevilWords[6]' },
+                { word: 'DevilWords[7]' }
+            ],
+            stimulusCss: { color:'#0000FF', 'font-size':'2.3em' }
+        },
+        attribute2: {
+            name: 'God',
+            title: {
+                media: { word: 'God' },
+                css: { color:'#0000FF', 'font-size':'1.8em' },
+                height: 4
+            },
+            stimulusMedia: [
+                { word: 'GodWords[0]' },
+                { word: 'GodWords[1]' },
+                { word: 'GodWords[2]' },
+                { word: 'GodWords[3]' },
+                { word: 'GodWords[4]' },
+                { word: 'GodWords[5]' },
+                { word: 'GodWords[6]' },
+                { word: 'GodWords[7]' }
+            ],
+            stimulusCss: { color:'#0000FF', 'font-size':'2.3em' }
+        },
+        base_url: {
+            image: 'https://github.com/baranan/minno-tasks/tree/30c3f45df5b9ffd071fb952cb74f94671bdb2d48/docs/images'
+        }
+    });
+});
