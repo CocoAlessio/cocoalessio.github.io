@@ -1,5 +1,13 @@
-define(['pipAPI','https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/IAT/qualtrics/quiat9.js'], function(APIConstructor, iatExtension){
+define(['pipAPI','https://raw.githubusercontent.com/CocoAlessio/cocoalessio.github.io/main/DefineVariables'], function(APIConstructor, iatExtension){
     var API = new APIConstructor();
+    
+      //Randomly choose the attribute words from a larger list of attribute words.
+  //Internal studies in Project Implicit found no difference in performance between the words.
+  var GodWords = API.shuffle([
+            'Omnipotent', 'Omniscient', 'Omnipresence', 'Savior', 'Supreme', 'Almighty', 'Holy spirit']);
+  var DevilWords = API.shuffle([
+            'Beelzebub', 'Lucifer', 'Satan', 'Demon', 'Sin', 'Evil', 'Hell']);
+  
 
     return iatExtension({
         category1: {
