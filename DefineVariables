@@ -2,7 +2,7 @@
 define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) {
 
 	/**
-	Created by: Yoav Bar-Anan (baranan@gmail.com). Modified by Gal
+	Created by: Yoav Bar-Anan (baranan@gmail.com). Modified by Costanza Alessio (cst.alessio@gmail.com)
 	 * @param  {Object} options Options that replace the defaults...
 	 * @return {Object}         PIP script
 	**/
@@ -40,12 +40,12 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 					height : 4 //Used to position the "Or" in the combined block.
 				},
 				stimulusMedia : [ //Stimuli content as PIP's media objects
-					{word: 'Tyron'},
-					{word: 'Malik'},
-					{word: 'Terrell'},
-					{word: 'Jazmin'},
-					{word: 'Tiara'},
-					{word: 'Shanice'}
+					{image: 'bm1_nc.jpg'},
+					{image: 'bm2_nc.jpg'},
+					{image: 'bm3_nc.jpg'},
+					{image: 'bf1_nc.jpg'},
+					{image: 'bf2_nc.jpg'},
+					{image: 'bf3_nc.jpg'}
 				],
 				//Stimulus css (style)
 				stimulusCss : {color:'#336600','font-size':'2.3em'}
@@ -58,61 +58,59 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 					height : 4 //Used to position the "Or" in the combined block.
 				},
 				stimulusMedia : [ //Stimuli content as PIP's media objects
-					{word: 'Jake'},
-					{word: 'Connor'},
-					{word: 'Bradley'},
-					{word: 'Allison'},
-					{word: 'Emma'},
-					{word: 'Emily'}
+					{image: 'yf1.jpg'},
+					{image: 'yf4.jpg'},
+					{image: 'yf5.jpg'},
+					{image: 'ym2.jpg'},
+					{image: 'ym3.jpg'},
+					{image: 'ym5.jpg'}
 				],
 				//Stimulus css
 				stimulusCss : {color:'#336600','font-size':'2.3em'}
 			},
 			attribute1 :
 			{
-				name : 'Bad words',
+				name : 'Devil',
 				title : {
-					media : {word : 'Bad words'},
+					media : {word : 'Devil'},
 					css : {color:'#0000FF','font-size':'1.8em'},
 					height : 4 //Used to position the "Or" in the combined block.
 				},
 				stimulusMedia : [ //Stimuli content as PIP's media objects
-					{word: 'awful'},
-					{word: 'failure'},
-					{word: 'agony'},
-					{word: 'hurt'},
-					{word: 'horrible'},
-					{word: 'terrible'},
-					{word: 'nasty'},
-					{word: 'evil'}
+					{word: 'Bezelbub'},
+					{word: 'Lucifer'},
+					{word: 'Satan'},
+					{word: 'Demon'},
+					{word: 'Sin'},
+					{word: 'Evil'},
+					{word: 'Hell'},
 				],
 				//Stimulus css
 				stimulusCss : {color:'#0000FF','font-size':'2.3em'}
 			},
 			attribute2 :
 			{
-				name : 'Good words',
+				name : 'God',
 				title : {
-					media : {word : 'Good words'},
+					media : {word : 'God'},
 					css : {color:'#0000FF','font-size':'1.8em'},
 					height : 4 //Used to position the "Or" in the combined block.
 				},
 				stimulusMedia : [ //Stimuli content as PIP's media objects
-					{word: 'laughter'},
-					{word: 'happy'},
-					{word: 'glorious'},
-					{word: 'joy'},
-					{word: 'wonderful'},
-					{word: 'peace'},
-					{word: 'pleasure'},
-					{word: 'love'}
+					{word: 'Omnipotent'},
+					{word: 'Omniscient'},
+					{word: 'Omnipresence'},
+					{word: 'Savior'},
+					{word: 'Supreme'},
+					{word: 'Almighty'},
+					{word: 'Holy Spirit'},
 				],
 				//Stimulus css
 				stimulusCss : {color:'#0000FF','font-size':'2.3em'}
 			},
 
 			base_url : {//Where are your images at?
-				image : '/implicit/user/yba/pipexample/biat/images/'
+				image : 'https://github.com/baranan/minno-tasks/tree/30c3f45df5b9ffd071fb952cb74f94671bdb2d48/docs/images'
 			},
 
 			//nBlocks : 7, This is not-supported anymore. If you want a 5-block IAT, change blockSecondCombined_nTrials to 0.
