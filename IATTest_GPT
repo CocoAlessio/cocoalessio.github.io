@@ -83,7 +83,7 @@ define(['pipAPI','https://raw.githubusercontent.com/CocoAlessio/cocoalessio.gith
             stimulusCss: { color:'#0000FF', 'font-size':'2.3em' }
         },
         base_url: {
-            image: 'https://github.com/baranan/minno-tasks/tree/30c3f45df5b9ffd071fb952cb74f94671bdb2d48/docs/images'
+            image: 'https://baranan.github.io/minno-tasks/images/'
         }
     });
 });
